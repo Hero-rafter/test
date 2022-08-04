@@ -1,0 +1,20 @@
+1.Can we nest the Scaffold widget? Why or Why not?
+=> Yes, We can nest scaffold widget, but it is not necessary to nest Scaffold widget.
+Because the Scaffold was designed to be the single top level container for a MaterialApp,
+and thus it is typically not necessary to nest scaffolds.
+
+
+2.What are the different ways we can create a custom widget ?
+=> We create Custom Widgets when we want a custom look and feel to our app.
+We can create custom widgets by using flutter's Stateless and Stateful widget.
+
+3.How can I access platform(iOS or Android) specific code from Flutter?
+=> We can access platform specific code using Method channels in flutter.
+Method channel provides us a bridge by which we can give call to block of code written in platform specific language.(Android: Java or kotlin, iOS: Objective-C or swift)
+After performing specific platform specific operation, method channel can be used to give reverse callback also from platform specific side to flutter.
+
+4.What is BuildContext? What is its importance?
+=> BuildContext is a locator that is used to track each widget in a tree and locate them and their position in the tree.
+The BuildContext of each widget is passed to their build method.
+Each BuildContext is unique to a widget.
+This means that the BuildContext of a widget is not the same as the BuildContext of the widgets returned by the widget.
